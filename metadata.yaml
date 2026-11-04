@@ -12,6 +12,8 @@ description: |
 version: 1.1.0
 author: mou-fang
 repo: https://github.com/mou-fang/astrbot_plugin_error_image
+logo: https://raw.githubusercontent.com/mou-fang/astrbot_plugin_error_image/main/assets/cover.png
+cover: https://raw.githubusercontent.com/mou-fang/astrbot_plugin_error_image/main/assets/cover.png
 astrbot_version: ">=4.0.0"
 support_platforms:
   - aiocqhttp

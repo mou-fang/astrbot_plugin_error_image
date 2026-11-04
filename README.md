@@ -1,4 +1,8 @@
-# astrbot_plugin_error_image
+# astrbot_plugin_error_image (报错喜报转换器)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mou-fang/astrbot_plugin_error_image/main/assets/cover.png" alt="Cover" width="600" />
+</p>
 
 优雅拦截 AstrBot 所有模型与插件报错，并转换为喜报图片发送，同时在后台日志中完整保留错误堆栈。支持可视化自由配置文字、底图与排版。
 
