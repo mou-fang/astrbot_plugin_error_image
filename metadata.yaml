@@ -1,0 +1,28 @@
+name: astrbot_plugin_error_image
+display_name: 报错喜报转换器
+desc: 优雅拦截 AstrBot 所有模型与插件报错，并转换为喜报图片发送，同时在后台日志中完整保留错误堆栈。支持可视化自由配置文字、底图与排版。
+description: |
+  优雅地将 AstrBot 所有恼人的报错（LLM 报错、Agent 超时、插件异常等）转换为喜报风格图片回复，化尴尬为幽默！
+  
+  特性：
+  - 完整拦截：覆盖 AstrMessageEvent.send 及装饰器阶段的报错拦截。
+  - 高度自由：支持通过管理面板或配置文件自由修改喜报文字（中英文均可、自动换行与居中）、字体颜色、描边。
+  - 自定义底图：支持直接更换底图，或直接发送已写好字的现成图片。
+  - 日志溯源：虽然对外发送喜报，但后台 logger.error 会完整保留原始报错堆栈，绝不影响管理员排查问题。
+version: 1.1.0
+author: mou-fang
+repo: https://github.com/mou-fang/astrbot_plugin_error_image
+astrbot_version: ">=4.0.0"
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - wecom
+  - lark
+  - dingtalk
+  - kook
+tags:
+  - 报错
+  - 喜报
+  - 趣味
+  - 体验优化

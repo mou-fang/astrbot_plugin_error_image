@@ -1,0 +1,54 @@
+{
+  "enable_custom_text": {
+    "description": "是否在喜报图片上绘制自定义文字",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后将使用下方文字排版绘制在喜报图片中央；若关闭，则直接发送底图本身（适用于您已经把文字P在底图上的情况）。"
+  },
+  "text_content": {
+    "description": "自定义喜报文字",
+    "type": "text",
+    "default": "An unexpected error occurred\nwhile processing your request.\n\nPlease notify the administrator\nto investigate and fix it.",
+    "hint": "支持多行文本，支持中英文混排。如果直接换行，会自动居中对齐排版。"
+  },
+  "custom_image_path": {
+    "description": "自定义喜报底图路径（可选）",
+    "type": "string",
+    "default": "",
+    "hint": "留空则使用插件默认喜报模板底图。若填写，支持容器内绝对路径（如 /AstrBot/data/...）或宿主机映射目录中的图片。"
+  },
+  "font_size": {
+    "description": "文字大小 (像素)",
+    "type": "int",
+    "default": 56,
+    "slider": {
+      "min": 24,
+      "max": 120,
+      "step": 2
+    },
+    "hint": "文字的基准大小，建议 48 ~ 64 之间。"
+  },
+  "text_color": {
+    "description": "文字颜色 (Hex / 英文名)",
+    "type": "string",
+    "default": "#C40000",
+    "hint": "文本主色，默认喜报大红 #C40000。"
+  },
+  "stroke_color": {
+    "description": "文字描边颜色 (Hex / 英文名)",
+    "type": "string",
+    "default": "#FFFFFF",
+    "hint": "文字轮廓描边色，默认白色 #FFFFFF，增强在亮色背景下的可读性。"
+  },
+  "stroke_width": {
+    "description": "描边粗细 (像素)",
+    "type": "int",
+    "default": 4,
+    "slider": {
+      "min": 0,
+      "max": 12,
+      "step": 1
+    },
+    "hint": "0 表示不描边。"
+  }
+}
